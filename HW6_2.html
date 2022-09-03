@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.00">
+    <title>Document</title>
+    <script>
+        function change (){
+        setTimeout(() => {
+            var name = document.getElementById("name");
+            var age = document.getElementById("age");
+            var dob = document.getElementById("dob");
+            
+            if(name.value != ""){
+                name.style.color = "green";
+            }
+            if(age.value != ""){
+                age.style.color = "green";
+            }
+            if(dob.value != ""){
+                dob.style.color = "green";
+            }
+        }, 1000);
+    }
+    </script>
+</head>
+<body id="green">
+    Name: <input type="text" id="name"  onmouseout="change()"><br>
+    Age: <input type="text" id="age"  onmouseout="change()"><br>
+    Birthdate: <input type="text" id="dob"  onmouseout="change()">
+</body>
+</html>
